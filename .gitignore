@@ -3,3 +3,7 @@ __pycache__/
 *$py.class
 
 *.parquet
+
+ny_taxi_data/
+
+.venv/
