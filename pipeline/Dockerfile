@@ -11,9 +11,9 @@ ENV PATH="/app/.venv/bin/:$PATH"
 
 COPY "pyproject.toml" "uv.lock" ".python-version" ./
 
-COPY pipeline.py .
+COPY taxi_data_ingestion.py .
 
 RUN uv sync --locked
 
-ENTRYPOINT ["python", "pipeline.py"]
+ENTRYPOINT ["python", "taxi_data_ingestion.py"]
 
